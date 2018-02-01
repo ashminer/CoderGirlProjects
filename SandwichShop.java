@@ -10,6 +10,10 @@ public class SandwichShop
         int burgerSales;
         int subSales;
         int soupSales;
+        int goalForVeggies = 50;
+        int goalForBurgers = 250;
+        int goalForSubs = 180;
+        int goalForSoup = 70;
 
         Scanner keyboard = new Scanner(System.in);
 
@@ -19,7 +23,7 @@ public class SandwichShop
         veggieSandwichSales = keyboard.nextInt();
         keyboard.skip("\n");
 
-        if (veggieSandwichSales >= 50)
+        if (veggieSandwichSales >= goalForVeggies)
         {
             out.println("Made goal for veggies.");
         }
@@ -32,7 +36,7 @@ public class SandwichShop
         burgerSales = keyboard.nextInt();
         keyboard.skip("\n");
 
-        if (burgerSales >= 250)
+        if (burgerSales >= goalForBurgers)
         {
             out.println("You made your burger goal. ");
         }
@@ -45,7 +49,7 @@ public class SandwichShop
         subSales = keyboard.nextInt();
         keyboard.skip("\n");
 
-        if (subSales >= 180)
+        if (subSales >= goalForSubs)
         {
             out.println("Made goal for subs.");
         }
@@ -58,7 +62,7 @@ public class SandwichShop
         soupSales = keyboard.nextInt();
         keyboard.skip("\n");
 
-        if (soupSales >= 70)
+        if (soupSales >= goalForSoup)
         {
             out.println("Made goal for soup.");
         }
@@ -67,7 +71,7 @@ public class SandwichShop
             out.println("That's not enough!");
         }
 
-        if (veggieSandwichSales >= 50 && burgerSales >= 250 && subSales >= 180 && soupSales >= 70)
+        if (veggieSandwichSales >= goalForVeggies && burgerSales >= goalForBurgers && subSales >= goalForSubs && soupSales >= goalForSoup)
         {
             out.println("Great! You've made goal for everything!");
         }
